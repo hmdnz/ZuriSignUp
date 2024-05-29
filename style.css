@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ff6f61;
+}
+
+.container {
+  background: #ff6f61;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.content {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.content p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.form-container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trial-info {
+  background: #4b37ef;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#signup-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#submit-btn {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background: #218838;
+}
+
+p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+p a {
+  color: #ff6f61;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content {
+    max-width: 400px;
+  }
+}
+
+.password-wrapper {
+    position: relative;
+  }
+  
+  #togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
